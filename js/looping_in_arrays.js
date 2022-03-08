@@ -17,9 +17,16 @@
 
 // Array : Mapping
 //Double numbers in an array using forEach()
+// let numbers = [1, 2, 3, 4, 5];
+// let doubledNumbers = [];
+// numbers.forEach(function(number) {
+//     doubledNumbers.push(number * 2);
+// });
+// alert(doubledNumbers);
+
+//Double numbers in an array using .map()
 let numbers = [1, 2, 3, 4, 5];
-let doubledNumbers = [];
-numbers.forEach(function(number) {
-    doubledNumbers.push(number * 2);
+let doubledNumbers = numbers.map(function(number) {
+    return number * 2;
 });
 alert(doubledNumbers);
